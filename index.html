@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CREATE ELEMENT WITH HTML TABLE</title>
+</head>
+<body>
+
+    <div class="container">
+        <input type="text" id="firstname" placeholder="Enter firstname" class="input">
+        <input type="text" id="Lastname" placeholder="Enter lastname" class="input">
+        <button id="submitBtn">Add</button>
+    </div>
+
+    <div class="container2">
+        <table class="table">
+            <!-- table header -->
+            <thead>
+                <!-- table heading -->
+                <th>Firstname</th>
+                <th>Lastname</th>
+            </thead>
+
+            <!-- table body -->
+            <tbody id="tbody">
+                <!-- table row -->
+                <tr>
+                    <!-- table data -->
+                    <td>Jerome</td>
+                    <td>Morales</td>
+                </tr>
+
+                <tr>
+                    <td>Bill</td>
+                    <td>Gates</td>
+                </tr>
+
+                <tr>
+                    <td>John</td>
+                    <td>Doe</td>
+                </tr>
+
+                <tr>
+                    <td>David</td>
+                    <td>Khang</td>
+                </tr>
+        
+            </tbody>   
+        </table>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
