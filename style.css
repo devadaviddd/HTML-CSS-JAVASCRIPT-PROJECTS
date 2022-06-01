@@ -1,0 +1,41 @@
+* {
+    font-family:Georgia, 'Times New Roman', Times, serif; 
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.mybtns {
+    padding: 20px;
+}
+
+.mybtns button {
+    font-weight: bold;
+    padding: 5px;
+}
+
+.container input {
+    margin: 2px;
+    padding: 5px;
+    font-weight: bold;
+}
+
+.displayBox {
+    height: 200px;
+    width: 300px;
+    background-color: rgb(53, 43, 43);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.displayBox h3 {
+    color: white;
+    font-size: 2rem;
+}
