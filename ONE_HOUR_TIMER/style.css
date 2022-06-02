@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Jura:wght@400;700&display=swap');
+
+* {
+    font-family: 'Jura';
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgb(204, 232, 204);
+}
+
+.container {
+    background: rgb(22, 18, 18);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.container h1 {
+    color: white;
+}
+
+#startBtn, #stopBtn, #resetBtn{
+    cursor: pointer;
+    padding: 10px;
+    width: 100px;
+    font-size: large;
+}
+
+#startBtn:hover, #stopBtn:hover, #resetBtn:hover {
+    background-color: aqua;
+}
+
