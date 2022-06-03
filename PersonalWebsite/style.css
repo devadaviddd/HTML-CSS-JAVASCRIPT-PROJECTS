@@ -1,0 +1,317 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+
+    /* Actual width and length without calculate border and padding */
+    box-sizing: border-box;  
+}
+
+body {
+    font-family: 'Roboto', 'Arial';
+    background-color: steelblue;
+    
+
+}
+
+.my-divs {
+    height: 100vh;
+    overflow: hidden;
+}
+
+#btn1, #btn2, #btn3,#btn4, #btn2prev, #btn3prev {
+    /* hidden */
+    visibility: hidden;
+    position: absolute;
+    /* hidden */
+}
+
+.arrow-up-prev::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    top: 50px;
+    
+    border-right: 4px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.8);
+    
+    transform: rotate(225deg);
+    cursor: pointer;
+}
+
+.arrow-down::after {
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    top: 40rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 4px solid rgba(255, 255, 255, 0.8);
+    border-bottom: 4px solid rgba(255, 255, 255, 0.8);
+    
+    transform: rotate(45deg);
+    cursor: pointer;
+}
+
+.arrow-up-firstPage::after {
+    /* background-color: red; */
+    content: "";
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    margin: auto;
+    top: 40rem;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-right: 8px solid rgba(243, 239, 15, 1);
+    border-bottom: 8px solid rgba(243, 239, 15, 1);
+    
+    transform: rotate(225deg);
+    cursor: pointer;
+}
+
+
+
+#div1 {
+    background-color: #16a596;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    position: relative;
+}
+
+#div1 h1 {
+    margin: 1rem;
+    color: #fff;
+    text-shadow:  1px 1px 5px rgb(0, 0, 0, 1);
+}
+
+#div1 i {
+    text-shadow:  1px 1px 5px rgb(0, 0, 0, 1);
+    font-size: 1.8rem;
+    color: #fff;
+}
+
+#div1 p {
+    color: #fff;
+    text-shadow: 1px 1px 5px rgb(0, 0, 0, 1);
+    line-height: 2;
+    letter-spacing: 0.6px;
+    font-size: 1.5rem;
+}
+
+.img-div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.img-div div {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+.img-div div img {
+    height: 200px;
+    border-radius: 50%;
+}
+
+#div2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+    background: url('img/computer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#div2 div {
+    background-color: rgba(3, 3, 3, 0.7);
+    height: 100vh;
+    width: 100vw;
+    padding-left: 10%;
+    padding-right: 10%;
+
+}
+
+#div2 div img {
+    height: 200px;
+    width: 200px;
+    margin-top: 10%;
+}
+
+#div2 div h1 {
+    color: white;
+    margin: 30px auto 30px;
+}
+
+#div2 div p {
+    color: #fff;
+    line-height: 2;
+    letter-spacing: 0.5px;
+    font-size: 1.2rem;
+}
+
+#div3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background-color: #16a596;
+}
+
+#skill_title {
+    width: 100%;
+    padding: 10px;
+}
+
+#skill_title h1, .skills h3, .skills p {
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(26, 25, 25, 0.5);
+}
+
+
+.skills-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills {
+    background-color: rgba(32, 31, 31);
+    border: 1px solid black;
+    width: 30%;
+    margin: 5px 5px 20px 0px;
+    padding: 25px;
+    height: 30vh;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.skills img {
+    height: 50%;
+
+    /* resize cái ảnh sẽ không bị nén lại | cover --> tự fix hình ảnh lại */
+    object-fit: cover;
+}
+
+#div4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+
+    background: url('img/computer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#div4 h1, #div4 p {
+    color: #fff;
+    text-shadow: 2px 2px 2px rgba(3, 3, 3, 0.7);
+    margin: 15px;
+}
+
+#div4 p {
+    font-size: 1.5rem;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+}
+
+form {
+    padding: 10px;
+
+}
+
+form input, form textarea, button {
+    width: 100%;
+    padding: 10px;
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+form input:focus {
+    outline: none;
+}
+
+form textarea {
+    font-family: inherit;
+    font-size: 1.2rem;
+}
+
+form textarea:focus {
+    outline: none;
+}
+
+form button {
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.2s ease-in;
+
+}
+
+form button:hover {
+    background-color: rgb(58, 57, 57);
+    color: #fff;
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+    .skills {
+        width: 70vw;
+    }
+
+    .skilss-wrap {
+        overflow: auto;
+    }
+
+    #div1 h1 {
+        font-size: 1.3rem;
+    }
+
+    #div2 div p {
+        font-size: 1.2rem;
+        line-height: 1.5;
+    }
+}
+
+@media(max-width: 450px) {
+
+}
