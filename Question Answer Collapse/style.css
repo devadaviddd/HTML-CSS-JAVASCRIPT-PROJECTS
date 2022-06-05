@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #c6fced;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrap {
+    background-color: #b8c6fc;
+    border: 1px solid #9fa4a8;
+    margin: 20px 0px 0px;
+    padding: 30px;
+    position: relative;
+    color: rgb(51, 51, 51);
+    width: 600px;
+}
+
+.wrap.active {
+    /* margin: 0px 35px 0px 0px; */
+    background-color: #fff;
+    
+}
+
+.wrap-title {
+    margin: 0px 35px 0 0 ;
+    font-size: 1.2rem;
+    /* text-shadow: vertical horizon blur color */
+    text-shadow: 1px 1px 2px #fff;
+}
+
+.wrap-text {
+    display: none;
+    margin: 30px 0px 0px 0px;
+}
+
+.wrap.active .wrap-text {
+    display: block;
+}
+
+.wrap-toggle {
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+
+    /* Set abosulute can set the top right width and height. Note that can work if parent is relative */
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    width: 30px;
+    height: 30px;
+}
+
+.wrap-toggle .fa-circle-chevron-down {
+    font-size: 1.5rem;
+}
+
+.wrap-toggle .fa-circle-xmark {
+    font-size: 1.5rem;
+}
+
+.wrap-toggle:focus {
+    outline: none;
+}
+
+.wrap-toggle .fa-circle-xmark {
+    display: none;
+}
+
+.wrap.active .wrap-toggle .fa-circle-xmark {
+    display: block;
+}
+
+.wrap.active .wrap-toggle .fa-circle-chevron-down {
+    display: none;
+}
