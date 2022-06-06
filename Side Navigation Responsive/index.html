@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=-, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>RESPONSIVE SIDE NAVIGATION</title>
+</head>
+<body>
+
+    <!-- TOP NAVIGATION -->
+    <div class="main-nav">
+        <ul class="main-nav-list">
+            <!-- href = # will not go anywhere -->
+            <li id="site-title"><a href="#">SPACE NAVIGATORS</a></li>
+            <li><a href="#">SPACE FLIGHTS</a></li>
+            <li><a href="#">MISSIONS</a></li>
+            <li><a href="#">DISCOVERIES</a></li>
+            <li><a href="#">NEWS</a></li>
+
+        </ul>
+    </div>
+    <button class="wrap-btn open-btn">
+        <i class="fas fa-bars"></i>
+    </button>
+
+    <!-- SIDE NAVIGATION -->
+    <div class="wrap wrap-black ">
+        <div class="wrap wrap-white ">
+            <button class="wrap-btn close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <a class="text" href="#">SPACE NAVIGATION</a>
+
+            <ul class="list">
+                <li><a href="#">SPACE FLIGHTS</a></li>
+                <li><a href="#">MISSIONS</a></li>
+                <li><a href="#">DISCOVERIES</a></li>
+                <li><a href="#">NEWS</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- CONTENT -->
+    <div class="content">
+        <div class="container">
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/L-6DamNEkok" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+            picture-in-picture" allowfullscreen></iframe>
+
+            <h1>SOME INFORMATION</h1>
+            <p>
+                <!-- loremx20  -->
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius, ullam ex quasi suscipit pariatur quas! 
+                Molestiae, ratione sequi? Iusto, deleniti.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex suscipit facilis quia itaque quo nam ad harum, dolores non modi.
+
+            </p>            
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
