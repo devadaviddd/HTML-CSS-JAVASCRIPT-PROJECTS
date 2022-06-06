@@ -20,6 +20,19 @@ body {
     overflow: hidden;
 }
 
+.main-nav {
+    /* margin-left: 60px; */
+    position: fixed;
+    top: 5px;
+    right: 0px;
+    padding: 14px 16px;
+    background-color: red;
+}
+.main-nav-list li{
+    display: inline;
+}
+
+
 #btn1, #btn2, #btn3,#btn4, #btn2prev, #btn3prev {
     /* hidden */
     visibility: hidden;
@@ -27,59 +40,23 @@ body {
     /* hidden */
 }
 
-.arrow-up-prev::after {
-    content: "";
-    width: 40px;
+.arrow-down {
     height: 40px;
-    position: absolute;
-    margin: auto;
-    left: 0;
-    right: 0;
-    top: 50px;
-    
-    border-right: 4px solid rgba(255, 255, 255, 0.8);
-    border-bottom: 4px solid rgba(255, 255, 255, 0.8);
-    
-    transform: rotate(225deg);
-    cursor: pointer;
+    width: 40px;
+    background-color: red;
 }
 
-.arrow-down::after {
-    content: "";
-    width: 40px;
+.arrow-up {
     height: 40px;
-    position: absolute;
-    margin: auto;
-    top: 40rem;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-right: 4px solid rgba(255, 255, 255, 0.8);
-    border-bottom: 4px solid rgba(255, 255, 255, 0.8);
-    
-    transform: rotate(45deg);
-    cursor: pointer;
+    width: 40px;
+    background-color: yellow;
 }
 
-.arrow-up-firstPage::after {
-    /* background-color: red; */
-    content: "";
-    width: 40px;
+.arrow-up-firstPage {
     height: 40px;
-    position: absolute;
-    margin: auto;
-    top: 40rem;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    border-right: 8px solid rgba(243, 239, 15, 1);
-    border-bottom: 8px solid rgba(243, 239, 15, 1);
-    
-    transform: rotate(225deg);
-    cursor: pointer;
+    width: 40px;
+    background-color: green;
 }
-
-
 
 #div1 {
     background-color: #16a596;
@@ -90,7 +67,6 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    position: relative;
 }
 
 #div1 h1 {
@@ -137,14 +113,17 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: relative;
 
     background: url('img/computer.jpg');
     background-size: cover;
     background-repeat: no-repeat;
 }
 
-#div2 div {
+#div2 #background {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     background-color: rgba(3, 3, 3, 0.7);
     height: 100vh;
     width: 100vw;
@@ -156,7 +135,7 @@ body {
 #div2 div img {
     height: 200px;
     width: 200px;
-    margin-top: 10%;
+    /* margin-top: 10%; */
 }
 
 #div2 div h1 {
@@ -177,7 +156,6 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: relative;
     background-color: #16a596;
 }
 
@@ -222,7 +200,6 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
-    position: relative;
 
     background: url('img/computer.jpg');
     background-size: cover;

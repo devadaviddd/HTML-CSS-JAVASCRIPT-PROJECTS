@@ -3,12 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
     <link rel="stylesheet" href="style.css">
     <title>MY PERSONAL WEBSITE</title>
 </head>
 <body>
+    <!-- main nav -->
+    <div class="main-nav">
+        <ul class="main-nav-list">
+            <li><a href="#div1">Home</a></li>
+            <li><a href="#div2">About</a></li>
+            <li><a href="#div3">Skill</a></li>
+            <li><a href="#div4">Contact Menu</a></li>
+        </ul>
+    </div>
+    <button class="wrap-btn open-btn">
+        <i class="fas fa-bars"></i>
+    </button>
 
+    <!-- SIDE NAVIGATION -->
+    <div class="wrap wrap-black">
+        <div class="wrap wrap-whit">
+            <button class="wrap-btn close-btn">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="side-nav">
+                <li><a href="#div1">Home</a></li>
+                <li><a href="#div2">About</a></li>
+                <li><a href="#div3">Skill</a></li>
+                <li><a href="#div4">Contact Me</a></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- Page 1 -->
     <div id="div1" class="my-divs">
+
         <div class="img-div">
             <div>
                 <img src="img/profile_photo.jpg" alt="">
@@ -20,30 +51,32 @@
             Programmer and Internet Entrepreneur striving to make the world a more unified 
             and connected place.</p>
 
-    </div>
-
         <a href="#div2" id="btn1">Go to the Next Section</a>
         <div id="arrow1" class="arrow-down"></div>  
 
-    <div id="div2" class="my-divs">
-        <a href="#div1" id="btn2prev">Go to the Previous Section</a>
-        <div id="arrow5" class="arrow-up-prev"></div> 
+    </div>
 
-        <div>
+    <!-- Page 2 -->
+    <div id="div2" class="my-divs">
+        <div id="background">
+            <a href="#div1" id="btn2prev">Go to the Previous Section</a>
+            <div id="arrow5" class="arrow-up"></div> 
+
             <img src="img/settings.png" alt="">
             <h1>What I am all about.</h1>
             <p>I'am Khang. I love to code when I was a young kid. Commanding a computer to do work are fascinated me! 
                 Because of that now I am studying so hard to become a Software Engineer so that I can code and create my own applications and websites.</p>
+        
+            <a href="#div3" id="btn2">Go to the Next Section</a>
+            <div id="arrow2" class="arrow-down"></div>
         </div>
-
-        <a href="#div3" id="btn2">Go to the Next Section</a>
-        <div id="arrow2" class="arrow-down"></div>
-        
-        
-
     </div>
 
+    <!-- Page 3 -->
     <div id="div3" class="my-divs">
+
+        <a href="#div2" id="btn3prev">Go to the Previous Section</a>
+        <div id="arrow6" class="arrow-up"></div> 
 
         <div id="skill_title">
             <h1>My Skill Set</h1>
@@ -86,11 +119,12 @@
         <a href="#div4" id="btn3">Go to the Next Section</a>
         <div id="arrow3" class="arrow-down"></div> 
 
-        <a href="#div2" id="btn3prev">Go to the Previous Section</a>
-        <div id="arrow6" class="arrow-up-prev"></div> 
+        
 
     </div>
 
+
+    <!-- Page 4 -->
     <div id="div4" class="my-divs">
         <div class="overlay">
             <div>
