@@ -3,5 +3,5 @@
 
 | Project Title      | Link |
 | ----------- | ----------- |
-| Mini Calculator      |    https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/MiniCalculator/index.html    |
+| Mini Calculator        |    https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/MiniCalculator/index.html    |
 | Paragraph   | Text        |
