@@ -10,20 +10,10 @@
 
 body {
     font-family: 'Roboto', 'Arial';
-    background-color: #333;
-    color: #222;
+    background-color: steelblue;
+    position: relative;
+
 }
-
-
-.container {
-    transform-origin: top left;
-    transition: transform 0.5s linear;
-}
-
-.container.show-nav {
-    transform: rotate(-20deg);
-}
-
 
 .my-divs {
     height: 100vh;
@@ -131,6 +121,39 @@ body {
     margin: 20px 0;
 }
 
+
+#btn1, #btn2, #btn3,#btn4, #btn2prev, #btn3prev {
+    /* hidden */
+    visibility: hidden;
+    position: absolute;
+    /* hidden */
+}
+
+.arrow-down {
+    height: 40px;
+    width: 40px;
+    background-color: red;
+    transform: rotate(45deg);
+    
+}
+
+.arrow-up {
+    height: 40px;
+    width: 40px;
+    background-color: yellow;
+    transform: rotate(45deg);
+    position: relative;
+    
+
+    
+}
+
+.arrow-up-firstPage {
+    height: 40px;
+    width: 40px;
+    background-color: green;
+    transform: rotate(45deg);
+}
 
 #div1 {
     background-color: #16a596;
