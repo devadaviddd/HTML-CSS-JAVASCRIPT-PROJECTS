@@ -11,3 +11,4 @@
 | Side Navigation Responsive | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Side%20Navigation%20Responsive/index.html|
 | Background Cards Expand | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Expanding%20Cards/index.html|
 | Progress Steps | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Progress%20Steps/index.html|
+| Hidden Search Bar | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Hidden%20Search%20Widget/index.html |
