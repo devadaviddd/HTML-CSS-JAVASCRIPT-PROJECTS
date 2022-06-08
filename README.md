@@ -10,3 +10,4 @@
 | Question Answer Collapse  | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Question%20Answer%20Collapse/index.html|
 | Side Navigation Responsive | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Side%20Navigation%20Responsive/index.html|
 | Background Cards Expand | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Expanding%20Cards/index.html|
+| Progress Steps | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Progress%20Steps/index.html|
