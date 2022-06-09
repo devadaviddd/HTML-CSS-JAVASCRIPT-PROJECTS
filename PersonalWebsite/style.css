@@ -15,10 +15,6 @@ body {
 
 }
 
-.my-divs {
-    height: 100vh;
-    overflow: hidden;
-}
 
 .main-nav {
     /* margin-left: 60px; */
@@ -164,6 +160,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
+    height: 100vh;
 }
 
 #div1 h1 {
@@ -252,7 +249,7 @@ body {
     font-size: 1.2rem;
 }
 
-#div3 {
+#div3:after{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -264,6 +261,7 @@ body {
 #skill_title {
     width: 100%;
     padding: 10px;
+    text-align: center;
 }
 
 #skill_title h1, .skills h3, .skills p {
@@ -274,19 +272,36 @@ body {
 
 .skills-wrap {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .skills {
     background-color: rgba(32, 31, 31);
     border: 1px solid black;
-    width: 30%;
     margin: 5px 5px 20px 0px;
-    padding: 25px;
-    height: 30vh;
-    display: inline-block;
+    padding: 10px;
+    width: 400px;
+    height: 200px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+    z-index: -1;
+}
+
+.skills:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+
+.skills.show {
+    transform: translateX(0);
 }
 
 .skills img {
@@ -378,7 +393,7 @@ form button:hover {
     }
 
     #div3 {
-        height: 170vh;
+        height: 140vh;
     }
 
     .skills {
