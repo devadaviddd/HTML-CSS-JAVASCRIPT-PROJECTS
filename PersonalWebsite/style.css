@@ -25,6 +25,7 @@ body {
     background-color: transparent;
     backdrop-filter: blur(8px);
     border-radius: 5px;
+    z-index: 1;
     
 }
 
@@ -249,19 +250,18 @@ body {
     font-size: 1.2rem;
 }
 
-#div3:after{
+#div3::after{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     background-color: #16a596;
+    height: 150vh;
 }
 
 #skill_title {
-    width: 100%;
-    padding: 10px;
-    text-align: center;
+    margin: 20px 0 20px;
 }
 
 #skill_title h1, .skills h3, .skills p {
@@ -285,7 +285,6 @@ body {
     padding: 10px;
     width: 400px;
     height: 200px;
-    box-sizing: border-box;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -293,7 +292,7 @@ body {
     border-radius: 10px;
     transform: translateX(400%);
     transition: transform 0.4s ease;
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .skills:nth-of-type(even) {
@@ -414,6 +413,3 @@ form button:hover {
     }
 }
 
-@media(max-width: 450px) {
-
-}

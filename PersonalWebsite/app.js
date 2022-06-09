@@ -3,8 +3,10 @@ const closeBtn = document.querySelector('.close-btn');
 const wrap = document.querySelectorAll('.wrap');
 const skills = document.querySelectorAll('.skills');
 
+window.addEventListener('scroll', checkSkills);
+
 function checkSkills() {
-    const triggerBottom = window.innerHeight / 5 * 4;
+    const triggerBottom = window.innerHeight / 5 * 3;
 
     skills.forEach(skill => {
         const boxTop = skill.getBoundingClientRect().top;
@@ -17,7 +19,6 @@ function checkSkills() {
     })
 }
 
-window.addEventListener('scroll', checkSkills);
 
 openBtn.addEventListener('click', function(){
     for(let i = 0; i < wrap.length; i++) {
