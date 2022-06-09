@@ -14,5 +14,5 @@
 | Hidden Search Bar | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Hidden%20Search%20Widget/index.html |
 | Blurring loading Effect | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Blurring%20Loading/index.html |
 | Scroll Animation | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Scroll%20Animation/index.html |
-| Rotating Animation | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Rotating%20Navigation/index.html |
+| Rotating Navigation | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Rotating%20Navigation/index.html |
 | Split Landing Page | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Split%20Landing%20Page/index.html |
