@@ -17,3 +17,4 @@
 | Rotating Navigation | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Rotating%20Navigation/index.html |
 | Split Landing Page | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Split%20Landing%20Page/index.html |
 | Form Wave Signup Page Animation | https://rawcdn.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/bf039bff3b9f0ad388c27cdf27fc98f34ac9bffb/Form%20Wave%20Animation/index.html |
+| Sound Board |https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Sound%20Board%20Project/index.html |
