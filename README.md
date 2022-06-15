@@ -24,3 +24,4 @@
 | Animated Navbar | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Animated%20Navigation/index.html |
 | Random Choice Picker | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Random%20Choice%20Picker/index.html |
 | Incrementating Counter | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Incrementating%20Counter/index.html |
+| Drink App | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Drink%20Water/index.html |
