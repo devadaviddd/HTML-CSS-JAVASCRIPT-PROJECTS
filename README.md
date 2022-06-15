@@ -21,3 +21,4 @@
 | Key Code | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Key%20Code/index.html |
 | Dad Joke | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Dad%20Jokes/index.html |
 | FAQ Collapse | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/FAQ%20Collapse/index.html |
+| Animated Navbar | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Animated%20Navigation/index.html |
