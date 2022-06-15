@@ -23,3 +23,4 @@
 | FAQ Collapse | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/FAQ%20Collapse/index.html |
 | Animated Navbar | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Animated%20Navigation/index.html |
 | Random Choice Picker | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Random%20Choice%20Picker/index.html |
+| Incrementating Counter | https://raw.githack.com/devadaviddd/HTML-CSS-JAVASCRIPT-PROJECTS/main/Incrementating%20Counter/index.html |
