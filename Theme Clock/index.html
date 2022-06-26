@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Theme Clock</title>
+</head>
+<body>
+    <button class="toggle">Dark mode</button>
+
+    <div class="menu">
+        <button class="btn" id="Default">Default</button>
+        <button class="btn" id="Stopwatch">Stopwatch</button>
+        <button class="btn" id="Timer">Timer</button>
+    </div>
+
+    <div class="clock-container active ">
+        <div class="clock">
+            <div class="needle hour"></div>
+            <div class="needle minute"></div>
+            <div class="needle second"></div>
+            <div class="center-point"></div>
+        </div>
+
+        <div class="time">12:00</div>
+        <div class="date">Monday, Nov <span class="circle">2</span></div>
+    </div>
+
+    <div class="stop-watch">
+
+        <div class="stop">
+            <span class="time" id="display">00:00:00</span>
+        </div>
+
+        <div class="controls">
+            <button class="buttonPlay">
+              <img id="playButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/play-button_opkxmt.svg" />
+    
+              <img id="pauseButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/pause-button_pinhpy.svg" />
+            </button>
+    
+            <button class="buttonReset">
+              <img id="resetButton" src="https://res.cloudinary.com/https-tinloof-com/image/upload/v1593360448/blog/time-in-js/reset-button_mdv6wf.svg" />
+            </button>
+        </div>
+    
+        
+        
+    </div>
+
+
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
