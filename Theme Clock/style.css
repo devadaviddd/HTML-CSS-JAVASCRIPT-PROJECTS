@@ -68,26 +68,15 @@ body {
 }
 
 .clock-container {
-    transform: translateX(500%);
-    transition: all 0.45s linear;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    transition: all 0.45s ease;
     position: absolute;
 
 }
 
-.clock-container.active{
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    transform: translateX(0);
-    transition: all 0.45s linear;
-    position: absolute;
-}
 
 .clock {
     position: relative;
@@ -173,18 +162,13 @@ body {
 
 .stop-watch {
     display: inline;
-    transform: translateX(-500%);
-    transition: all 0.45s linear;
     position: absolute;
+    
+    transform: translateX(500%);
+    transition: all 0.45s ease;
+
 }
 
-
-.stop-watch.active {
-    display: inline;
-    transform: translateX(0%);
-    transition: all 0.45s linear;
-    position: absolute;
-}
 
 .controls {
     display: inline;
@@ -204,6 +188,14 @@ body {
     border-radius: 50%;
 
 }
+
+.timer {
+    display: inline;
+    transform: translateX(1000%);
+    transition: all 0.45s ease;
+    position: absolute;
+}
+
 
 .buttonReset {
     margin-left: 95px;

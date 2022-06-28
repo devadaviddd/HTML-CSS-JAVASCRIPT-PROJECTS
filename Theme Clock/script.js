@@ -9,20 +9,45 @@ const default_btn = document.querySelector('#Default');
 const stopwatch_btn = document.querySelector('#Stopwatch');
 const Default = document.querySelector('.clock-container');
 const Stopwatch = document.querySelector('.stop-watch');
+const Timer = document.querySelector('.timer');
+const timer_btn = document.querySelector("#Timer");
 
 const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
+
+
 default_btn.addEventListener('click', () => {
-    Default.classList.add('active');
-    Stopwatch.classList.remove('active');    
+    Stopwatch.style.transform = "translateX(500%)";
+    
+
+    Timer.style.transform = "translateX(1000%)";
+
+    
+    // Timer.classList.remove('active');
+    Default.style.transform = "translateX(0%)";    
+    
 })
 
 stopwatch_btn.addEventListener('click', () => {
-    Default.classList.remove('active');
-    Stopwatch.classList.add('active');    
+    Default.style.transform = "translateX(-500%)";
+    // Default.classList.remove('active');
+
+    Timer.style.transform = "translateX(500%)";
+    
+
+    // Timer.classList.remove('active');
+    Stopwatch.style.transform = "translateX(0%)";    
 })
 
+timer_btn.addEventListener('click', () => {
+    Stopwatch.style.transform = "translateX(-500%)";
+
+    Default.style.transform = "translateX(-1000%)";
+
+
+    Timer.style.transform = "translateX(0%)";
+})
 
 
 
