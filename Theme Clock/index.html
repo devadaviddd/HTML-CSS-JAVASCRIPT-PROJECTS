@@ -50,7 +50,17 @@
 
     <div class="timer">
         <div class="watch">
-            <span class="time" id="display">00:00:00</span>
+            <span class="time" id="display"> 
+                <span id="hourText">00</span>:<span id="minuteText">00</span>:<span id="secondText">00</span>
+            </span>
+
+            <div class="timeInput">
+                <input type="text" id="hour" placeholder="00"><span style="font-size: 2.5rem; font-family: inherit;">:</span>
+                <input type="text" id="minute" placeholder="00"><span style="font-size: 2.5rem; font-family: inherit;">:</span>
+                <input type="text" id="second" placeholder="00">
+            </div>
+
+            <button type="submit" id="submitBtn">Start</button>
         </div>
     </div>
 

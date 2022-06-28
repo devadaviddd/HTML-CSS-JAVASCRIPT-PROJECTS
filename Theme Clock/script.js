@@ -174,3 +174,104 @@ playButton.addEventListener("click", start);
 pauseButton.addEventListener("click", pause);
 resetButton.addEventListener("click", reset);
 
+const hourText = document.getElementById("hourText");
+const hour = document.getElementById("hour");
+const minuteText = document.getElementById("minuteText");
+const minute = document.getElementById("minute");
+const secondText = document.getElementById("secondText");
+const second = document.getElementById("second");
+const submitBtn = document.getElementById("submitBtn");
+
+submitBtn.addEventListener('click', () => {
+    var a = hour.value.replace(/\s/g, "");
+    if(a > 99) {
+        alert("Hour cannot greater than 99")
+    } else if(a < 0) {
+        alert("Hour cannot smaller than 0");
+    } else if(a.includes(".")) {
+        alert("Invalid input");
+    } else if(isNaN(a) == true) {
+        alert("Invalid input");
+        hourText.innerHTML = "00";
+    } else if(a == "" || parseInt(a) == 0) {
+        hourText.innerHTML = "00";
+    } else {
+        (a < 10)?hourText.innerHTML = "0" + a:hourText.innerHTML = a;
+    }
+
+    var b = minute.value.replace(/\s/g, "");
+    if(b > 59) {
+        alert("Minute cannot greater than 59")
+    } else if(b < 0) {
+        alert("Minute cannot smaller than 0");
+    } else if(b.includes(".")) {
+        alert("Invalid input");
+    } else if(isNaN(b) == true) {
+        alert("Invalid input");
+        minuteText.innerHTML = "00";
+    } else if(b == "" || parseInt(b) == 0) {
+        minuteText.innerHTML = "00";
+    } else {
+        (b < 10)?minuteText.innerHTML = "0" + b:minuteText.innerHTML = b;
+    }
+    
+
+    var c = second.value.replace(/\s/g, "");
+    if(c > 59) {
+        alert("Second cannot greater than 99")
+    } else if(c < 0) {
+        alert("Second cannot smaller than 0");
+    } else if(c.includes(".")) {
+        alert("Invalid input");
+    } else if(isNaN(c) == true) {
+        alert("Invalid input");
+        secondText.innerHTML = "00";
+    } else if(c == "" || parseInt(c) == 0) {
+        secondText.innerHTML = "00";
+    } else {
+        (c < 10)?secondText.innerHTML = "0" + c:secondText.innerHTML = c;
+    }
+    
+    if(hourText.innerHTML !== "00" || minuteText.innerHTML !== "00" || secondText.innerHTML !== "00") {
+        let minuteTurn = false;
+        let hourTurn = false;
+        const myInterval = setInterval(function(){
+            if(secondText.innerHTML !== "00") {
+                secondText.innerHTML = secondText.innerHTML - 1;
+                (secondText.innerHTML < 10)?secondText.innerHTML = "0" + secondText.innerHTML:true;
+            }
+            if(secondText.innerHTML === "00" && minuteText.innerHTML === "00" && hourText.innerHTML === "00") {
+                clearInterval(myInterval);
+                return;
+            }
+            if(secondText.innerHTML === "00") {
+                secondText.innerHTML = "59";
+                minuteTurn = true;
+            }
+            
+            if(minuteTurn) {
+                if(minuteText.innerHTML !== "00") {
+                    minuteText.innerHTML = minuteText.innerHTML - 1;
+                    (minuteText.innerHTML < 10)?minuteText.innerHTML = "0" + minuteText.innerHTML:true;
+                }
+                if(minuteText.innerHTML === "00" && hourText.innerHTML !== "00") {
+                    minuteText.innerHTML = "59"; 
+                    hourTurn = true;   
+                }
+                minuteTurn = false;
+            }
+            if(hourTurn && hourText.innerHTML !== "00") {
+                if(hourText.innerHTML !== "00") {
+                    hourText.innerHTML = hourText.innerHTML - 1;
+                    (hourText.innerHTML < 10)?hourText.innerHTML = "0" + hourText.innerHTML:true;
+                }
+                hourTurn = false;
+            }
+        }, 1000)
+    }
+
+
+})
+
+
+
