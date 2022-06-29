@@ -184,6 +184,8 @@ const submitBtn = document.getElementById("submitBtn");
 
 submitBtn.addEventListener('click', () => {
     var a = hour.value.replace(/\s/g, "");
+    let aInt = parseInt(a);
+
     if(a > 99) {
         alert("Hour cannot greater than 99")
     } else if(a < 0) {
@@ -196,10 +198,12 @@ submitBtn.addEventListener('click', () => {
     } else if(a == "" || parseInt(a) == 0) {
         hourText.innerHTML = "00";
     } else {
-        (a < 10)?hourText.innerHTML = "0" + a:hourText.innerHTML = a;
+        (a < 10)?hourText.innerHTML = "0" + aInt:hourText.innerHTML = aInt;
+
     }
 
     var b = minute.value.replace(/\s/g, "");
+    let bInt = parseInt(b);
     if(b > 59) {
         alert("Minute cannot greater than 59")
     } else if(b < 0) {
@@ -212,11 +216,12 @@ submitBtn.addEventListener('click', () => {
     } else if(b == "" || parseInt(b) == 0) {
         minuteText.innerHTML = "00";
     } else {
-        (b < 10)?minuteText.innerHTML = "0" + b:minuteText.innerHTML = b;
+        (b < 10)?minuteText.innerHTML = "0" + bInt:minuteText.innerHTML = bInt;
     }
     
 
     var c = second.value.replace(/\s/g, "");
+    let cInt = parseInt(c);
     if(c > 59) {
         alert("Second cannot greater than 99")
     } else if(c < 0) {
@@ -229,7 +234,7 @@ submitBtn.addEventListener('click', () => {
     } else if(c == "" || parseInt(c) == 0) {
         secondText.innerHTML = "00";
     } else {
-        (c < 10)?secondText.innerHTML = "0" + c:secondText.innerHTML = c;
+        (c < 10)?secondText.innerHTML = "0" + cInt:secondText.innerHTML = cInt;
     }
     
     if(hourText.innerHTML !== "00" || minuteText.innerHTML !== "00" || secondText.innerHTML !== "00") {
